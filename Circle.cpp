@@ -9,5 +9,5 @@ Circle::Circle(double radius) : radius(radius) {
 }
 
 double Circle::getSquare() {
-    return PI * radius * radius;
+    return kPi * radius * radius;
 }
