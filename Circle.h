@@ -6,7 +6,7 @@
 
 class Circle : public Figure {
 private:
-    double radius;
+    const double radius;
 
 public:
     Circle(double radius);
