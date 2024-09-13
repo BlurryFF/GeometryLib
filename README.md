@@ -103,6 +103,6 @@ constexpr double kPi = 3.14159265358979323846;
 ```
 ____
 
-#GeometryLib.h
+# GeometryLib.h
 
 Единый заголовочный файл для библиотеки.
