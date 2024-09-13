@@ -8,7 +8,7 @@ Triangle::Triangle(double a, double b, double c) : a(a), b(b), c(c) {
     }
 }
 
-bool Triangle::isTriangle(double a, double b, double c) {
+bool Triangle::isTriangle(double& a,double& b,double& c) const {
     if (a <= 0 || b <= 0 || c <= 0){
         return false;
     }
@@ -19,16 +19,15 @@ bool Triangle::isTriangle(double a, double b, double c) {
     return true;
 }
 
-bool Triangle::isRightTriangle(double a, double b, double c) {
-    double hypotenuse = std::max(a,std::max(b,c));
-    double sideA = std::min(a,std::min(b,c));
+bool Triangle::isRightTriangle() const {
+    double hypotenuse = std::max(a, std::max(b,c));
+    double sideA = std::min(a, std::min(b,c));
     double sideB = (a + b + c) - hypotenuse - sideA;
 
     if (sideA*sideA + sideB*sideB == hypotenuse*hypotenuse){
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 double Triangle::getSquare() {
