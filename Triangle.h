@@ -6,12 +6,12 @@
 
 class Triangle : public Figure {
 private:
-    double a,b,c;
+    const double a,b,c;
 
 public:
     Triangle(double a, double b, double c);
-    bool isTriangle(double a, double b, double c);
-    bool isRightTriangle(double a, double b, double c);
+    bool isTriangle(double& a, double& b, double& c) const;
+    bool isRightTriangle() const;
     double getSquare() override;
 };
 
