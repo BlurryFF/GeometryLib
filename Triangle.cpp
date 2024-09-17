@@ -4,7 +4,7 @@
 
 Triangle::Triangle(double a, double b, double c) : a(a), b(b), c(c) {
     if(!isTriangle(a,b,c)){
-        throw std::invalid_argument("Такого треугольника не существует!");
+        throw std::invalid_argument("Invalid triangle sides");
     }
 }
 
