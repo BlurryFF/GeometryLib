@@ -7,10 +7,10 @@
 class Triangle : public Figure {
 private:
     const double a,b,c;
+    bool isTriangle(double& a, double& b, double& c) const;
 
 public:
     Triangle(double a, double b, double c);
-    bool isTriangle(double& a, double& b, double& c) const;
     bool isRightTriangle() const;
     double getSquare() override;
 };
