@@ -3,8 +3,8 @@
 #include "constants.h"
 
 Circle::Circle(double radius) : radius(radius) {
-    if (radius < 0.0) {
-        throw std::invalid_argument("Радиус не может быть меньше 0!");
+    if (radius <= 0.0) {
+        throw std::invalid_argument("radius cannot be less than or equal to 0");
     }
 }
 
